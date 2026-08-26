@@ -29,5 +29,5 @@ import fs from 'fs'
     const response = await db.query(query);
 
     console.clear();
-    console.table(response.rows, ['brand', 'model', 'year', 'price', 'color', 'condition', 'solid']);
+    console.table(response.rows);
 })();
