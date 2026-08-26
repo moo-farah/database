@@ -21,5 +21,9 @@
 
 -- select the brand, model, condition, and price from cars find results where the price is less than 50000;
 
-SELECT brand, model, condition, price FROM cars
-WHERE price < 50000;
+-- SELECT brand, model, condition, price FROM cars
+-- WHERE price < 50000;
+
+SELECT brand, model, color, price
+FROM cars
+WHERE color != 'red';
