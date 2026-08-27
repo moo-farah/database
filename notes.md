@@ -25,3 +25,18 @@ WHERE model LIKE 'a%';
 ```
 * **%** Represents zero or more characters
 * **_** Represesnts a single character
+
+
+### In Operator
+Lets you check if a value matches **any value in a list**, instead of writting multiple **OR** conditions.
+
+**Without IN(clunky):**
+```
+SELECT * FROM cars
+WHERE brand = 'Toyoto' OR brand = 'Honda' OR brand = 'Ford'
+```
+**With IN(cleaner):**
+```
+SELECT * FROM cars
+WHERE brand IN ('Toyota', 'Honda', 'Ford');
+```
