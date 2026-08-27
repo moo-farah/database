@@ -24,6 +24,16 @@
 -- SELECT brand, model, condition, price FROM cars
 -- WHERE price < 50000;
 
-SELECT brand, model, color, price
+-- SELECT brand, model, color, price
+-- FROM cars
+-- WHERE color != 'red';
+
+-- select the brand, model, year, condition, and price from cars
+-- where the condition is 7 or higher
+-- and the year is before 2020
+
+SELECT brand, model, year, condition, price
 FROM cars
-WHERE color != 'red';
+WHERE condition <= 7
+AND year < 2020
+AND price <= 20000;

@@ -16,3 +16,12 @@ columns: known as **fields** while rows known as **records**
 **Object Relational Mapping (ORMS)**
 Is a method of interacting with databases which allows use of an object-oriented approach, rather than using SQL direct.
 
+**Wildcard:** Is used to substitute one or more characters in a string.
+Wild characters are used with the **LIKE** operator.
+The **LIKE** operator is used in a **WHERE** clause to search for a specified pattern in a column
+``` 
+SELECT * FROM cars
+WHERE model LIKE 'a%';
+```
+* **%** Represents zero or more characters
+* **_** Represesnts a single character
