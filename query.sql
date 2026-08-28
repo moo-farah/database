@@ -135,7 +135,29 @@
 -- HAVING COUNT(year) > 1
 -- ORDER BY car_count;
 
-SELECT id, dealership_id, brand, model FROM cars;
+-- SELECT id, dealership_id, brand, model FROM cars;
+
+
+-- Select the brand, model, price, sold, sold_price columns from sold_cars
+-- Left join with cars matching sold_cars.cars_id to cars.id
+
+-- SELECT brand, model, price, sold, sold_price
+-- FROM sold_cars sc
+-- RIGHT JOIN cars c ON sc.cars_id = c.id;
+
+
+-- Select name, role, city, state
+-- From the staff table
+-- Left join with the dealerships table where the dealership_id in staff
+-- matches with the id in dealerships
+
+SELECT name, role, city, state
+FROM staff s
+LEFT JOIN dealerships d ON s.dealership_id = d.id;
+
+
+
+
 
 
 

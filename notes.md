@@ -110,3 +110,11 @@ cannot contain **NULL** values (it is a combination of both a **UNIQUR**) constr
 **Foreign Key:** constraint establishes a link between two tables, and prevents action that will destroy the link between them.
 A **Foreign Key:** is a column in a table that refers to the **Primary key** in another table.
 
+
+## JOINS Clause
+Is used to combine rows from two or more tables, based on a related column between them.
+
+**INNER JOIN:** Returns only rows that have matching values in both tables
+**LEFT (OUTER) JOIN:** Return all rows from the left table, and only the matched rows from the right table
+**RIGHT (OUTER) JOIN:** Returns all rows from the right table, and only the matched rows from the left table
+**FULL (OUTER) JOIN:** Returns all rows when there is a match in either the left or right table
