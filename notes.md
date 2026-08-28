@@ -104,3 +104,9 @@ HAVING condition -- The condition on grouped data
 ORDER BY column_name
 ```
 
+**Primary key:** constraint uniquely identifies each record in a database table.
+cannot contain **NULL** values (it is a combination of both a **UNIQUR**) constraint and a **NOT NULL** constraint.
+
+**Foreign Key:** constraint establishes a link between two tables, and prevents action that will destroy the link between them.
+A **Foreign Key:** is a column in a table that refers to the **Primary key** in another table.
+
