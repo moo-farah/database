@@ -19,6 +19,10 @@ import fs from 'fs'
     const populateTables = fs.readFileSync('populate-tables.sql', 'utf-8')
     await db.exec(populateTables);
 
+    // Alter the existing table
+    const alterTable = fs.readFileSync('alter-tables.sql', 'utf-8')
+    await db.exec(alterTable);
+
     // Load the sql query file
     const query = fs.readFileSync('query.sql', 'utf-8');
 

@@ -135,7 +135,7 @@
 -- HAVING COUNT(year) > 1
 -- ORDER BY car_count;
 
-SELECT * FROM staff;
+SELECT id, dealership_id, brand, model FROM cars;
 
 
 
