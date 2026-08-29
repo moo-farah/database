@@ -118,3 +118,6 @@ Is used to combine rows from two or more tables, based on a related column betwe
 **LEFT (OUTER) JOIN:** Return all rows from the left table, and only the matched rows from the right table
 **RIGHT (OUTER) JOIN:** Returns all rows from the right table, and only the matched rows from the left table
 **FULL (OUTER) JOIN:** Returns all rows when there is a match in either the left or right table
+
+### SQL Injection (SQLI)
+Is a security vulnerability where an attacker manipulates a SQL query by inserting malicious input into fields that get inserted directly into SQL code
