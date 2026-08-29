@@ -27,6 +27,10 @@ import fs from 'fs'
     const insertData = fs.readFileSync('insert-data.sql', 'utf-8')
     await db.exec(insertData);
 
+    // Constraints
+    const alterConstraints = fs.readFileSync('alter-constraints.sql', 'utf-8')
+    await db.exec(alterConstraints);
+
     // Load the sql query file
     const query = fs.readFileSync('query.sql', 'utf-8');
 
